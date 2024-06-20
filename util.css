@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Poppins;
+  }
+  
+  :root{
+    --main-color: #ff357a;
+    --secondary-color: #3bb4f2;
+    --main-radius: 12px;
+    --main-shadow: 6px 6px 12px rgb(0,0,0,0.08), 
+    -6px -6px 12px rgb(255,255,255,1);
+    --main-btn-shadow: 2px 2px 5px #ff606087;
+    --secondary-btn-shadow: 2px 2px 5px #60e7ff87;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  body{
+    background-color: #edf1f587;
+  }
+  
+  a {
+    color: #00B7FF;
+    text-decoration: none;
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  .btn{
+    border: none;
+    border-radius: var(--main-radius);
+    padding: 12px 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-shadow-main{
+    box-shadow: var(--main-btn-shadow);
+    color: white;
+  }
+  .btn-shadow-secondary{
+    box-shadow: var(--secondary-btn-shadow);
+    color: white;
+  }
+  
+  .bg-main{
+    background-color: var(--main-color);
+    color: white;
+  }
+  .bg-secondary{
+    background-color: var(--secondary-color);
+  }
+  
+  .main-color{
+    color: var(--main-color);
+  }
+  .secondary-color{
+    color: var(--secondary-color);
+  }
+  .white{
+    color: white;
+  }
+  
+  .flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot{
+    text-shadow: var(--main-btn-shadow);
+  }
+  
+  .profile-name{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+  }
+  
+  .error{
+    font-size: 14px;
+    color: red;
+    font-weight: 600;    
+    background-color: #ffd0d3c9;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }

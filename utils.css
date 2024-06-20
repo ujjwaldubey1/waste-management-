@@ -1,0 +1,27 @@
+.flex{
+    display: flex;
+}
+.btn{
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.btn-main{
+    background-color: var(--main-color);
+    box-shadow: var(--main-shadow);
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+    box-shadow: var(--secondary-shadow);
+}
+
+.main-bg{
+    background-color: var(--main-color);
+}
+.secondary-bg{
+    background-color: var(--secondary-color);
+}
+
+.main-radius{
+    border-radius: 12px 15px;
+}

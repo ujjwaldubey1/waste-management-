@@ -1,0 +1,342 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root{
+    --main-width: 97vw;
+    --main-color: #00c701;
+    --secondary-color: #383838;
+    --main-shadow: 2px 2px 5px #088704;
+    --secondary-shadow: 2px 2px 5px #5c5c5c;
+    --info-shadow: 2px 2px 5px #cfcfcf;
+}
+
+header {
+    /* color: rgb(60, 234, 144); */
+    width: 100%;
+}
+
+header nav{
+    width: var(--main-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #2F4858;
+    margin-inline: auto;
+
+    & input{
+        border: 1px solid black;
+    }
+}
+.logo {
+    font-size: 2rem;  
+    font-weight: 700;
+}
+
+.pages a {
+  margin: 2rem;
+}
+.user-details{
+    gap: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+/* <!-- ================================== HEADER ENDS ======================================== --> */
+
+main{
+    background-color: #f0f0f0;
+    padding: 12px 0;
+}
+main .container{
+    width: var(--main-width);
+    justify-content: space-around;
+    align-items: start;
+    gap: 12px;
+    margin-inline: auto;
+}
+
+main .container .info-box{
+    /* width: 100%; */
+    height: 500px;
+    box-shadow: var(--info-shadow);
+    border-radius: 12px 15px;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+}
+/* community style start here */
+
+main .container .community-wrapper{
+    flex: 1;
+    background-color: var(--secondary-color);
+    box-shadow: var(--secondary-shadow);
+}
+
+.cummunity-search-type {
+    height: 3rem;
+    width: 100%;
+    border-radius: 3rem;
+    background-color: var(--secondary-color);
+    box-shadow: var(--secondary-shadow);
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.cummunity-like {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    
+}
+.person {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    color: white;
+    margin: 10px;
+}
+
+.person-image {
+    width: 40px; /* Set the width of the image */
+    height: 40px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Add some space between the image and the name */
+}
+.follow-style {
+    color: black;
+    background:white;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 3rem;
+    margin-left: 3rem;
+    font-size: 17px;
+    cursor: pointer;
+}
+/* Add a CSS class to change text color */
+.following {
+    color: white;
+    background-color: black;
+}
+
+
+.person-name {
+    font-size: 20px; /* Set the font size of the name */
+}
+
+main .container .posts-wrapper{
+    /* height: 150vh; */
+    height: fit-content;
+    flex: 2;
+}
+
+main .container .challenge-wrapper{
+    flex: 1;
+}
+.equal-space {
+    justify-content: space-between;
+}
+.person-info {
+    flex-grow: 1; /* Allow the info div to grow and take up remaining space */
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* =================================post style start here=========================================================*/
+
+.posts-wrapper{
+    padding: 10px;
+}
+
+.post-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+  
+}
+.user-name-locat {
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.user-location {
+    font-size: 13px;
+    color:grey;
+}
+.img-name {
+    display: flex;
+    justify-content: space-between;
+}
+.app-follow-button{
+    display: flex;
+    
+
+}
+
+.follow-button {
+    background-color:transparent;
+    color: green;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.follow-button:hover {
+    background-color: rgb(165, 202, 165) ;
+}
+
+.follow-button:focus {
+    outline: none;
+}
+
+.text {
+    margin-left: 5px;
+}
+
+.post-img {
+    width: 40px; /* Set the width of the image */
+    height: 40px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+
+}
+.user-name {
+    font-size: 15px;
+}
+
+.post-discription {
+    display: flex;
+}
+.see-more-button {
+    background-color: rgba(0, 128, 0, 0.2); /* Transparent green background */
+    color: #000; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.see-more-button:hover {
+    background-color: rgba(0, 128, 0, 0.3); /* Darker green on hover */
+}
+
+.dots {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.text {
+    font-size: 16px;
+}
+.image-container {
+    width: 100%; 
+    max-height: 500px;
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 10px; /* Apply border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow for depth effect */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    display: block; /* Remove any default image spacing */
+    object-fit: cover;
+    object-position: center;
+}
+/* =============================================Events============================================*/
+
+
+.challenge-wrapper{
+    display: flex;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* Standard syntax */
+    top: 0; 
+
+}
+.events-challenge {
+    display: flex;
+    flex-direction: column;
+}
+.events-challenge h1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+/* .events-challenge i{
+    margin-inline: 5px;
+} */
+.ongoing-events {
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #e4e7ea;
+    
+}
+.ongoing {
+    display: flex;
+    color: orange;
+    i{
+        margin-inline: 5px;
+    } 
+}
+.ongoing a {
+    color: orange;
+    margin-left: 5rem;
+}
+.drill-info {
+    margin: 5px;
+}
+.upcoming-events {
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #e4e7ea;
+}
+
+.upcoming{
+    display: flex;
+    color:green;
+    i{
+        margin-inline: 5px;
+    }
+    
+    
+
+}
+.upcoming a {
+    color: green;
+    margin-left: 5rem;
+}
+.name-logo {
+    display: flex;
+}
+
+.ngo-logo {
+    
+    width: 40px; /* Set the width of the image */
+    height: 40px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px;
+
+}
+
+
+
+
+
